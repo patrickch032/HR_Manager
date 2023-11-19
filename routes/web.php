@@ -17,5 +17,7 @@ use App\Http\Controllers\EmpController;
 
 Route::get('/',[UserController::class,'login'])->name('login.page');
 
+Route::get('/register',[UserController::class,'register'])->name('register.page');
+
 Route::post('/auth',[UserController::class,'auth'])->name('auth.user');
 
