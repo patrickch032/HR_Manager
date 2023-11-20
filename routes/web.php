@@ -34,3 +34,5 @@ Route::get('/listView',[EmpController::class,'listView'])->name('list.view');
 Route::get('/home',[UserController::class,'homeView'])->name('home.view');
 
 Route::resource('employees',EmpController::class);
+
+Route::get('/edit',[EmpController::class,'edit'])->name('edit.emp');
