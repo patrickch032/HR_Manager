@@ -25,3 +25,7 @@ Route::get('/',[UserController::class,'login'])->name('logout.page');
 
 Route::post('/reg',[UserController::class,'reg'])->name('reg.user');
 
+Route::get('/regView',[EmpController::class,'regView'])->name('reg.view');
+
+Route::get('/listView',[EmpController::class,'listView'])->name('list.view');
+
