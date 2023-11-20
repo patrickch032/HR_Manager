@@ -25,7 +25,11 @@ Route::get('/',[UserController::class,'login'])->name('logout.page');
 
 Route::post('/reg',[UserController::class,'reg'])->name('reg.user');
 
+Route::post('/regEmp',[EmpController::class,'regEmp'])->name('reg.emp');
+
 Route::get('/regView',[EmpController::class,'regView'])->name('reg.view');
 
 Route::get('/listView',[EmpController::class,'listView'])->name('list.view');
+
+Route::get('/home',[UserController::class,'homeView'])->name('home.view');
 
